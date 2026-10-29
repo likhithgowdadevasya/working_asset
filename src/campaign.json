@@ -1,0 +1,222 @@
+{
+  "_note": "SINGLE SOURCE OF TRUTH. The landing page, dashboard and every document in the submission read from this file. All numbers are ASSUMPTIONS/TARGETS until validated by real data.",
+  "workshop": {
+    "title": "Build Your First AI Project in 60 Minutes",
+    "host": "NxtWave",
+    "price": "Free",
+    "format": "Online workshop",
+    "date": "[Date — to be confirmed by NxtWave]",
+    "time": "[Time — to be confirmed by NxtWave]",
+    "presenter": "[Presenter — to be confirmed by NxtWave]",
+    "registrationUrl": "[Official registration URL — to be confirmed by NxtWave]"
+  },
+  "campaign": {
+    "name": "The 60-Minute Project Squad",
+    "thesis": "Final-year students do not lack AI hype — they lack one AI project they built themselves. Sell the finished project, not the webinar, and let students recruit their own squad.",
+    "coreMessage": "One real AI project. 60 minutes. Free. Bring a friend.",
+    "objective": "500 completed registrations from final-year engineering students in 7 days with a total budget of ₹2,000 (target, not a forecast).",
+    "insight": "In placement season every resume carries the same to-do app and weather app. Students have watched plenty of AI content but have shipped nothing with it, and they distrust 'another webinar' that ends in slides. They act on what a friend forwards, not on a poster.",
+    "differentiator": "Instead of a poster, every registrant gets a personal Squad link and the campaign is built around forwarding in peer groups, where a friend's message carries more trust than an ad."
+  },
+  "headlineVariants": {
+    "a": {
+      "label": "Outcome-led",
+      "subhead": "Walk away with a working AI project you can demo in your next interview — built live, in one hour.",
+      "cta": "Reserve my free seat"
+    },
+    "b": {
+      "label": "Barrier-led",
+      "subhead": "Never built anything with AI? Start here: one guided hour, one project, zero slides-only theory.",
+      "cta": "Start my first AI project"
+    }
+  },
+  "hooks": {
+    "hookA": "Your resume has a to-do app. So does everyone else's. Add an AI project that actually runs.",
+    "hookB": "You don't need to be an ML expert to build with AI. Build your first project in 60 minutes."
+  },
+  "outcomesProposed": [
+    "Understand how a simple AI-powered app is put together, end to end.",
+    "Build and run a small working AI project during the session.",
+    "Know how to describe the project and what you built in a resume or interview."
+  ],
+  "outcomesNote": "Proposed outcomes written for the campaign. Confirm against NxtWave's official workshop syllabus before launch.",
+  "audience": [
+    {
+      "id": "s1",
+      "name": "Placement-pressured CS/IT final-years",
+      "motivation": "Stand out in interviews with a project that is not a tutorial clone.",
+      "objection": "'Another webinar — I'll get slides and no output.'",
+      "message": "Leave with a project you can demo, not slides.",
+      "channel": "WhatsApp / Telegram class, hostel and placement groups"
+    },
+    {
+      "id": "s2",
+      "name": "Non-CS branch final-years (ECE/EEE/Mech/Civil)",
+      "motivation": "Want AI skills for broader job options but feel AI is 'for CS students'.",
+      "objection": "'I don't know ML — this isn't for me.'",
+      "message": "You don't need to be an ML expert to build your first AI project.",
+      "channel": "Instagram Reels (organic + paid boost)"
+    },
+    {
+      "id": "s3",
+      "name": "Club-connected connectors (coding / E-Cell / IEEE club members)",
+      "motivation": "Add value for their members and look useful to their community.",
+      "objection": "'I don't want to spam my group with something low quality.'",
+      "message": "A free hands-on session you can forward, with a ready-to-send message.",
+      "channel": "Campus club & community admin outreach (LinkedIn/Instagram DMs, Discord)"
+    }
+  ],
+  "channels": [
+    {
+      "id": "wa",
+      "name": "WhatsApp / Telegram peer groups",
+      "source": "whatsapp",
+      "why": "Highest trust and zero media cost. Students act on a forward from a classmate. Distribution starts from my own network and spreads through the Squad link.",
+      "fallback": "If seeding stalls, post the message in open student Telegram/Discord communities and ask 10 friends in different colleges to forward once."
+    },
+    {
+      "id": "ig",
+      "name": "Instagram Reels (organic + ₹1,200 boost)",
+      "source": "instagram",
+      "why": "The only affordable way to reach students outside my network and non-CS branches; the boost doubles as the message experiment.",
+      "fallback": "If cost per visit is more than 2x the assumption by day 3, stop the boost and move the money to Squad prizes."
+    },
+    {
+      "id": "club",
+      "name": "Campus club & community outreach",
+      "source": "club",
+      "why": "One admin forward reaches hundreds of members. Cold DMs cost nothing but time.",
+      "fallback": "Expect most DMs to be ignored. If under 5 of 40 admins reply by day 3, redirect effort to WhatsApp seeding."
+    }
+  ],
+  "supportingMechanism": {
+    "name": "Squad referral link",
+    "description": "After registering, each student gets a personal link. Friends who register through it count toward their Squad. Top 5 referrers by verified, unique registrations receive a ₹100 reward.",
+    "rewardPerWinner": 100,
+    "winners": 5
+  },
+  "rejectedChannels": [
+    "Google / YouTube ads — CPC too high for ₹2,000; would buy < 100 clicks",
+    "LinkedIn ads — minimum budgets and CPM too high for this budget",
+    "Email — no list; cold email to students is spam",
+    "Printed posters — untrackable, needs college permission, slow",
+    "Paid influencers — a single post would consume the whole budget"
+  ],
+  "funnel": {
+    "target": 500,
+    "base": {
+      "label": "Base case (assumption)",
+      "channels": [
+        { "id": "wa",   "name": "WhatsApp / Telegram", "reach": 6000,  "ctr": 0.12,  "conv": 0.30 },
+        { "id": "ig",   "name": "Instagram Reels",     "reach": 20000, "ctr": 0.015, "conv": 0.25 },
+        { "id": "club", "name": "Club outreach",       "reach": 4000,  "ctr": 0.06,  "conv": 0.30 }
+      ],
+      "referral": { "sharerRate": 0.25, "regsPerSharer": 1.6, "conv": 0.30 },
+      "showUp": 0.35,
+      "paidCpm": 100,
+      "paidBudget": 1200,
+      "organicIgReach": 8000
+    },
+    "downside": {
+      "label": "Downside case (assumption)",
+      "channels": [
+        { "id": "wa",   "name": "WhatsApp / Telegram", "reach": 3000,  "ctr": 0.08, "conv": 0.20 },
+        { "id": "ig",   "name": "Instagram Reels",     "reach": 12000, "ctr": 0.01, "conv": 0.20 },
+        { "id": "club", "name": "Club outreach",       "reach": 1500,  "ctr": 0.04, "conv": 0.20 }
+      ],
+      "referral": { "sharerRate": 0.15, "regsPerSharer": 1.0, "conv": 0.25 },
+      "showUp": 0.25,
+      "paidCpm": 150,
+      "paidBudget": 1200,
+      "organicIgReach": 4000
+    },
+    "difficultyNote": "500 is a stretch. It needs roughly 1,700 landing-page visits converting at about 29% with an active referral loop. With no existing audience, the realistic outcome is probably between the downside (about 100) and base (about 500) cases. The plan is built to learn fast which channel works, not to promise 500."
+  },
+  "budget": {
+    "total": 2000,
+    "lines": [
+      { "item": "Instagram boost — message test (Exp. 1), 2 reels × ₹300, days 1–3", "amount": 600 },
+      { "item": "Instagram boost — scale the winning reel, days 4–6", "amount": 600 },
+      { "item": "Squad rewards — 5 × ₹100 (UPI/voucher) for top referrers", "amount": 500 },
+      { "item": "Held reserve — released on day 6 only if the funnel is healthy", "amount": 300 }
+    ],
+    "freeTools": "Canva (free), CapCut (free), Vercel/Netlify free tier, Google Forms/Sheets (free)."
+  },
+  "schedule": [
+    { "day": "Day 1", "focus": "Launch", "actions": "Deploy page; publish 2 reels (hook A/B) and start ₹300 boost each; seed 20 WhatsApp/Telegram groups; DM 40 club admins." },
+    { "day": "Day 2", "focus": "Seed", "actions": "Follow up admins; post in 20 more groups; review dashboard and fix the biggest funnel leak." },
+    { "day": "Day 3", "focus": "Decide", "actions": "Close the message test (Exp. 1); pick winning hook; check landing variant data." },
+    { "day": "Day 4", "focus": "Scale", "actions": "Put ₹600 behind the winning reel; launch Squad leaderboard post." },
+    { "day": "Day 5", "focus": "Spread", "actions": "Second club follow-up; Squad shoutouts; read Exp. 2 (landing variant)." },
+    { "day": "Day 6", "focus": "Push", "actions": "'Last 48 hours' message; release ₹300 reserve only if funnel is healthy." },
+    { "day": "Day 7", "focus": "Close", "actions": "Final reminder; close registrations; verify unique referrals; pay rewards; write the learnings." }
+  ],
+  "experiments": [
+    {
+      "id": "exp1",
+      "name": "Message hook test — career proof vs. no-barrier",
+      "hypothesis": "A career-proof hook ('your resume has a to-do app') will generate more completed registrations per ₹100 than a no-barrier hook, because final-years are under placement pressure.",
+      "why": "Message choice is the biggest uncertainty and the paid budget is too small to test it twice.",
+      "audience": "Engineering students on Instagram (India, age 20–23); Instagram Reels boost.",
+      "variants": "Hook A: \"Your resume has a to-do app. So does everyone else's. Add an AI project that actually runs.\" vs Hook B: \"You don't need to be an ML expert to build with AI. Build your first project in 60 minutes.\" Same reel format, same landing page, same budget (₹300 each).",
+      "independent": "Hook text in the first 3 seconds and caption.",
+      "primary": "Completed registrations per ₹100 spent (by utm_content).",
+      "guardrail": "Landing-page-to-registration conversion stays at or above 15% (so cheap clicks are not low-intent).",
+      "data": "Instagram Ads Manager for spend and reach; the asset records utm_content=hookA|hookB on every visit and registration.",
+      "duration": "72 hours (Days 1–3).",
+      "decision": "Needs at least 25 landing visits per variant. Winner = at least 25% higher registrations per ₹100 with the guardrail met.",
+      "positive": "Put the ₹600 scale budget behind the winner.",
+      "negative": "If the other hook wins, switch to it and keep its wording for WhatsApp copy.",
+      "inconclusive": "Split the ₹600 evenly and use both hooks for different segments (A for CS/IT, B for non-CS)."
+    },
+    {
+      "id": "exp2",
+      "name": "Landing page — outcome-led vs. barrier-led subhead and CTA",
+      "hypothesis": "Barrier-led copy ('Start my first AI project') will lift visit-to-registration conversion by at least 5 percentage points because many visitors doubt they are 'ready'.",
+      "why": "Every visitor passes through the page. A small conversion lift multiplies across all three channels.",
+      "audience": "All landing-page visitors (every channel).",
+      "variants": "Variant A: outcome-led subhead + button 'Reserve my free seat'. Variant B: barrier-led subhead + button 'Start my first AI project'. Headline, form and layout are identical.",
+      "independent": "Subhead text and CTA label.",
+      "primary": "Visit-to-registration conversion rate by variant.",
+      "guardrail": "Form-start-to-completion rate stays at or above 60% (the copy must not attract people who abandon the form).",
+      "data": "Built into the asset: 50/50 random assignment (sticky per browser), events carry the variant. Read on the Dashboard.",
+      "duration": "Days 1–5 or until 150 visits per variant, whichever is later.",
+      "decision": "Low statistical power at this volume, so results are directional. Choose B if conversion is at least 5 points above A with 150+ visits each.",
+      "positive": "Make variant B the default for all traffic.",
+      "negative": "Keep variant A.",
+      "inconclusive": "Keep A and test the form length (name + email only) instead."
+    },
+    {
+      "id": "exp3",
+      "name": "Peer referral — personal Squad link vs. ordinary share",
+      "hypothesis": "Registrants who get a personal Squad link with progress and a reward will bring at least 1.5x more referred registrations per registrant than registrants shown a generic share link.",
+      "why": "The plan depends on the referral loop contributing roughly 30% of registrations. If it does not, the 500 target is unreachable.",
+      "audience": "Everyone who completes registration (confirmation screen).",
+      "variants": "Control: generic 'share with a friend' link and message. Treatment: personal link, Squad progress (target: 3 friends), and note about the top-5 ₹100 rewards. Randomized 50/50 per registrant.",
+      "independent": "Type of share prompt (generic vs. personal Squad link with progress and reward). Note: reward and personal link are bundled in the treatment.",
+      "primary": "Referred registrations per registrant, by arm.",
+      "guardrail": "Duplicate or invalid registrations stay below 10% of referred sign-ups (to catch gaming of rewards).",
+      "data": "Built into the asset: the share arm is stored at registration and carried in the share link (arm=c / arm=t, plus ref code). Read on the Dashboard.",
+      "duration": "Days 2–7 (each registrant has a 48-hour attribution window).",
+      "decision": "Needs at least 100 registrants per arm. Treatment wins if referred registrations per registrant are at least 1.5x control and at least 0.15 absolute.",
+      "positive": "Show the Squad link to everyone and increase the reward share of the budget.",
+      "negative": "Drop rewards, keep the simple share button and move the ₹500 to the boost.",
+      "inconclusive": "Run a follow-up isolating reward vs. personal link."
+    }
+  ],
+  "measurement": {
+    "definitions": {
+      "reach": "People who could see a message (impressions or group members). Estimated; not tracked by the asset.",
+      "visits": "Landing-page visits recorded by the asset (page_view).",
+      "registrations": "Completed registrations (registration_completed) with a valid, unique email.",
+      "attendance": "People who join the live session. Not measured by the asset; read from the webinar tool after the event."
+    },
+    "risks": [
+      { "risk": "No audience or admin replies", "action": "Shift effort to WhatsApp seeding in own network; post in open communities." },
+      { "risk": "Boost cost per visit is more than 2x assumption", "action": "Stop on day 3; move budget to Squad rewards." },
+      { "risk": "Referral gaming (fake emails)", "action": "Count only unique valid emails; verify before paying rewards." },
+      { "risk": "Landing page conversion below 15%", "action": "Shorten the form; test subhead; check mobile load." },
+      { "risk": "Workshop details (date, presenter) not available", "action": "Page clearly shows placeholders; confirm with NxtWave before launch." }
+    ]
+  }
+}
